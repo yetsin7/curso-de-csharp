@@ -1,26 +1,71 @@
 # Libro de C# — De cero a PRO
 
-Guía práctica y progresiva para aprender C# moderno (.NET 8+) entendiendo como
+Guía práctica y progresiva para aprender C# moderno (.NET 8+) entendiendo cómo
 se comporta una aplicación de consola o de backend dentro del ecosistema .NET.
+
+Repositorio oficial: [https://github.com/yetsin7/curso-de-csharp](https://github.com/yetsin7/curso-de-csharp)
 
 ---
 
-## ¿Para quien es este libro?
+## 🇳🇮 Para estudiantes de Nicaragua (y de toda Latinoamérica)
+
+Si estás en Nicaragua y quieres aprender a programar, este libro es para ti.
+
+No necesitas pagar un curso caro, no necesitas registrarte en ninguna plataforma,
+no necesitas mandar correos ni dar tus datos. Tampoco necesitas tener internet
+todo el tiempo: una vez que clonas el repositorio, puedes estudiar completamente
+**offline** desde tu computadora.
+
+Este material está pensado para que cualquier persona, sin importar su ciudad,
+su edad o su situación económica, pueda formarse como programadora o programador
+profesional desde cero. Si eres de León, Managua, Estelí, Matagalpa, Granada,
+Bluefields o de cualquier rincón del país, este libro está hecho para ti.
+
+Y si no eres de Nicaragua, también eres bienvenido. El contenido está escrito
+en español neutro y funciona igual de bien para estudiantes de cualquier país
+de Centroamérica y Latinoamérica.
+
+---
+
+## ¿Por qué existe este libro?
+
+La misión de este proyecto es simple: **que más nicaragüenses puedan aprender
+a programar de forma gratuita, sin barreras**.
+
+En Nicaragua muchos estudiantes y autodidactas tienen el talento y las ganas,
+pero no siempre tienen acceso a:
+
+- cursos pagados que cuestan cientos de dólares;
+- internet rápido o estable las 24 horas;
+- libros técnicos en español bien explicados;
+- alguien que les guíe paso a paso desde cero.
+
+Este libro busca cerrar esa brecha. Es **100% gratuito**, no requiere registro,
+funciona **sin internet** una vez clonado, y está escrito en español claro,
+sin tecnicismos innecesarios. No hace falta haber programado antes.
+
+Si este material te sirve, compártelo con otros estudiantes nicaragüenses,
+con tu colegio, tu universidad, tu grupo de amigos o cualquier persona que
+quiera aprender. Mientras más seamos, más fuerte se hace la comunidad.
+
+---
+
+## ¿Para quién es este libro?
 
 - Personas que quieren aprender a programar desde cero usando C#
 - Desarrolladores de otros lenguajes (Java, Python, JS) que quieren migrar a .NET
 - Estudiantes que buscan entender C# moderno con ejemplos ejecutables
 - Cualquier persona que quiera entender el ecosistema .NET de forma ordenada
 
-## Que aprenderas
+## Qué aprenderás
 
 Este libro explica C# como lenguaje y como plataforma:
 
 - sintaxis clara y tipada;
-- como .NET compila y ejecuta el código;
-- como se organizan clases, objetos y colecciones;
-- como se maneja memoria de forma administrada;
-- como construir programas confiables y mantenibles.
+- cómo .NET compila y ejecuta el código;
+- cómo se organizan clases, objetos y colecciones;
+- cómo se maneja memoria de forma administrada;
+- cómo construir programas confiables y mantenibles.
 
 ---
 
@@ -42,7 +87,7 @@ dotnet --version
 
 ---
 
-## Que ocurre cuando ejecutas C#
+## Qué ocurre cuando ejecutas C#
 
 Cuando corres un programa en C#:
 
@@ -80,7 +125,7 @@ dotnet run
 
 ---
 
-## Tabla de capítulos
+## 📚 Tabla de capítulos
 
 | #  | Capítulo                        | Temas principales                                          |
 |----|---------------------------------|------------------------------------------------------------|
@@ -148,3 +193,25 @@ Libro de C#/
 ├── 12-async-y-tasks/
 └── 13-proyecto-biblia/
 ```
+
+---
+
+## ⭐ Cómo apoyar este proyecto
+
+Si este libro te está ayudando a aprender, hay varias formas de apoyar el proyecto.
+Todas son gratis y suman muchísimo:
+
+- **Dale una estrella** ⭐ al repositorio en GitHub. Eso ayuda a que más personas
+  lo encuentren: [github.com/yetsin7/curso-de-csharp](https://github.com/yetsin7/curso-de-csharp)
+- **Compártelo** con tus amigos, compañeros de clase, profesores o cualquier
+  persona en Nicaragua o Latinoamérica que quiera aprender a programar.
+- **Abre un issue** si encuentras un error, una explicación confusa o un ejemplo
+  que no funciona. Tu reporte mejora el libro para todos.
+- **Manda un pull request** si quieres aportar mejoras, correcciones, ejemplos
+  nuevos o traducciones. Toda contribución es bienvenida.
+- **Estudia y termina el libro.** Tu progreso ya es parte del impacto: cada
+  persona que aprende fortalece la comunidad de programadores del país.
+
+---
+
+Hecho con cariño desde Nicaragua para todo el que quiera aprender. 🇳🇮
