@@ -3,7 +3,7 @@
 Guía práctica y progresiva para aprender C# moderno (.NET 8+) entendiendo cómo
 se comporta una aplicación de consola o de backend dentro del ecosistema .NET.
 
-Repositorio oficial: [https://github.com/yetsin7/Curso-de-C-Sharp](https://github.com/yetsin7/Curso-de-C-Sharp)
+Repositorio oficial: [https://github.com/yetsin7/Curso-de-C-sharp](https://github.com/yetsin7/Curso-de-C-sharp)
 
 ---
 
@@ -202,7 +202,7 @@ Si este libro te está ayudando a aprender, hay varias formas de apoyar el proye
 Todas son gratis y suman muchísimo:
 
 - **Dale una estrella** ⭐ al repositorio en GitHub. Eso ayuda a que más personas
-lo encuentren: [github.com/yetsin7/Curso-de-C-Sharp](https://github.com/yetsin7/Curso-de-C-Sharp)
+lo encuentren: [github.com/yetsin7/Curso-de-C-sharp](https://github.com/yetsin7/Curso-de-C-sharp)
 - **Compártelo** con tus amigos, compañeros de clase, profesores o cualquier
   persona en Nicaragua o Latinoamérica que quiera aprender a programar.
 - **Abre un issue** si encuentras un error, una explicación confusa o un ejemplo
