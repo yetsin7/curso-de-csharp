@@ -5,6 +5,11 @@ se comporta una aplicación de consola o de backend dentro del ecosistema .NET.
 
 Repositorio oficial: [https://github.com/yetsin7/Curso-de-C-sharp](https://github.com/yetsin7/Curso-de-C-sharp)
 
+## Documentacion de referencia
+
+Consulta [DOCUMENTACION-OFICIAL.md](./DOCUMENTACION-OFICIAL.md) para seguir el
+curso junto con la referencia oficial de C# y .NET.
+
 ---
 
 ## 🇳🇮 Para estudiantes de Nicaragua (y de toda Latinoamérica)
