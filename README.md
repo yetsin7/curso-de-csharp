@@ -1,4 +1,4 @@
-# Libro de C# — De cero a PRO
+# Curso de C# — De cero a PRO
 
 Guía práctica y progresiva para aprender C# moderno (.NET 8+) entendiendo cómo
 se comporta una aplicación de consola o de backend dentro del ecosistema .NET.
@@ -175,7 +175,7 @@ dotnet add package Microsoft.Data.Sqlite
 ## Estructura del proyecto
 
 ```
-Libro de C#/
+Curso de C#/
 ├── README.md                  ← Este archivo
 ├── datos/
 │   └── README.md              ← Información sobre la BD de la Biblia

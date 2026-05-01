@@ -1,0 +1,22 @@
+# .NET / C#
+bin/
+obj/
+*.user
+*.suo
+*.userprefs
+*.cache
+*.dll
+*.exe
+*.pdb
+project.lock.json
+artifacts/
+.vs/
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Sistema
+.DS_Store
+Thumbs.db
