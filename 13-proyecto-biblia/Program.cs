@@ -1,19 +1,32 @@
 // ============================================================
 // Capítulo 13 — Proyecto Biblia
-// Requisito: dotnet add package Microsoft.Data.Sqlite
-// Base de datos: ../../datos/biblia_rv60.sqlite3
+// Paquete: Microsoft.Data.Sqlite
+// Base de datos: datos/biblia_rv60.sqlite3
 // ============================================================
 
 using Microsoft.Data.Sqlite;
 
-// Ruta relativa a la BD (relativa al directorio de ejecución)
-const string RUTA_BD = "../../datos/biblia_rv60.sqlite3";
+// Resolver la BD desde varias rutas posibles para facilitar el estudio.
+var rutasCandidatas = new[]
+{
+    Path.Combine(Environment.CurrentDirectory, "..", "datos", "biblia_rv60.sqlite3"),
+    Path.Combine(AppContext.BaseDirectory, "..", "..", "..", "..", "datos", "biblia_rv60.sqlite3"),
+    Path.Combine(AppContext.BaseDirectory, "..", "..", "..", "datos", "biblia_rv60.sqlite3")
+}
+.Select(Path.GetFullPath)
+.Distinct()
+.ToArray();
+
+string? rutaBD = rutasCandidatas.FirstOrDefault(File.Exists);
 
 // Verificar que la base de datos existe antes de continuar
-if (!File.Exists(RUTA_BD))
+if (rutaBD is null)
 {
     Console.ForegroundColor = ConsoleColor.Red;
-    Console.WriteLine($"ERROR: No se encontró la base de datos en: {RUTA_BD}");
+    Console.WriteLine("ERROR: No se encontró la base de datos de la Biblia.");
+    Console.WriteLine("Rutas intentadas:");
+    foreach (var ruta in rutasCandidatas)
+        Console.WriteLine($"- {ruta}");
     Console.WriteLine("Verifica que el archivo biblia_rv60.sqlite3 esté en la carpeta 'datos/'.");
     Console.ResetColor();
     return;
@@ -24,7 +37,7 @@ Console.WriteLine("       Proyecto Biblia — Reina-Valera 1960       ");
 Console.WriteLine("=================================================\n");
 
 // Abrir la conexión una sola vez y reutilizarla en todas las consultas
-using var conexion = new SqliteConnection($"Data Source={RUTA_BD}");
+using var conexion = new SqliteConnection($"Data Source={rutaBD}");
 conexion.Open();
 Console.WriteLine("Conexión exitosa a la base de datos.\n");
 

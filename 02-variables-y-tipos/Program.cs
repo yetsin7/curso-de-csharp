@@ -74,6 +74,7 @@ int?  edadNullable  = null;
 bool? estadoNullable = null;
 
 Console.WriteLine($"edadNullable tiene valor: {edadNullable.HasValue}");
+Console.WriteLine($"estadoNullable tiene valor: {estadoNullable.HasValue}");
 
 // Asignar un valor y verificar
 edadNullable = 25;

@@ -1,35 +1,52 @@
 # Documentacion oficial de C# y .NET
 
-Este curso se fortalece mucho cuando lo acompanias con la documentacion
-oficial de Microsoft y la referencia del lenguaje.
+Este curso mejora mucho si estudias cada modulo junto con la documentacion
+oficial de Microsoft. La idea no es leer todo de una vez, sino usar estas
+fuentes para reforzar cada capitulo cuando practiques.
 
 ## Referencias principales
 
 - [Microsoft Learn - C#](https://learn.microsoft.com/en-us/dotnet/csharp/)
-  Explica C# con guias, ejemplos y rutas de aprendizaje.
 - [Referencia del lenguaje C#](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/)
-  Sirve para consultar sintaxis exacta y construcciones del lenguaje.
-- [Documentacion de .NET](https://learn.microsoft.com/en-us/dotnet/)
-  .NET es la plataforma donde viven muchas apps escritas en C#.
+- [Documentacion general de .NET](https://learn.microsoft.com/en-us/dotnet/)
+- [CLI de .NET](https://learn.microsoft.com/en-us/dotnet/core/tools/)
 
-## Recursos clave para estudiar
+## Recursos clave por tema
 
 - [Tipos integrados](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types)
-  Son los tipos basicos como `int`, `string`, `bool` y otros.
-- [Clases, structs e interfaces](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/)
-  Base para modelar datos y comportamiento.
+  Para variables, conversiones y tipos basicos.
+- [Operadores y expresiones](https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/)
+  Para comparaciones, asignaciones y logica.
+- [Seleccion y repeticion](https://learn.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/branches-and-loops)
+  Para `if`, `switch`, `for`, `while` y `foreach`.
+- [Metodos](https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/methods)
+  Para parametros, retorno y sobrecarga.
+- [Clases, structs, records e interfaces](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/types/)
+  Para modelado orientado a objetos.
 - [LINQ](https://learn.microsoft.com/en-us/dotnet/csharp/linq/)
-  LINQ permite consultar y transformar colecciones de datos con sintaxis muy expresiva.
+  Para consultas y transformacion de colecciones.
 - [Manejo de excepciones](https://learn.microsoft.com/en-us/dotnet/csharp/fundamentals/exceptions/)
-  Las excepciones representan errores que ocurren durante la ejecucion.
-- [Async y await](https://learn.microsoft.com/en-us/dotnet/csharp/asynchronous-programming/)
-  Permiten manejar tareas asincronas sin bloquear la aplicacion.
-- [CLI de .NET](https://learn.microsoft.com/en-us/dotnet/core/tools/)
-  La CLI es la interfaz de linea de comandos para crear, compilar y ejecutar proyectos.
+  Para errores controlados y programas mas robustos.
+- [Entrada y salida de archivos](https://learn.microsoft.com/en-us/dotnet/standard/io/)
+  Para trabajar con archivos, rutas y directorios.
+- [Programacion asincrona](https://learn.microsoft.com/en-us/dotnet/csharp/asynchronous-programming/)
+  Para `Task`, `async`, `await` y cancelacion.
+- [Microsoft.Data.Sqlite](https://learn.microsoft.com/en-us/dotnet/standard/data/sqlite/)
+  Para el proyecto final con SQLite.
 
-## Orden recomendado
+## Ruta recomendada dentro de este curso
 
-1. Empieza por fundamentos de C#.
-2. Pasa a orientacion a objetos.
-3. Practica colecciones, LINQ y errores.
-4. Luego estudia async, proyectos y herramientas .NET.
+1. `01` a `05`: domina la base del lenguaje.
+2. `06` a `08`: aprende a modelar software con POO, herencia e interfaces.
+3. `09` a `11`: trabaja datos, errores y archivos.
+4. `12`: entiende async y tareas.
+5. `13`: integra todo con consultas reales a SQLite.
+
+## Regla practica de estudio
+
+Por cada capitulo:
+
+1. Lee el `README.md`.
+2. Ejecuta `dotnet run`.
+3. Completa `02_practica-guiada.md`.
+4. Consulta la documentacion oficial solo en el tema que estes reforzando.

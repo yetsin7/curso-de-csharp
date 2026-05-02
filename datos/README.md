@@ -6,14 +6,14 @@ Esta carpeta contiene los datos compartidos utilizados en los capítulos avanzad
 
 ## Archivo principal
 
-```
+```bash
 biblia_rv60.sqlite3
 ```
 
-Ubicación relativa desde la raíz del libro:
+Ubicacion desde la raiz del curso:
 
-```
-../../datos/biblia_rv60.sqlite3
+```bash
+datos/biblia_rv60.sqlite3
 ```
 
 ---
@@ -113,6 +113,6 @@ while (lector.Read())
 
 ## Notas
 
-- La ruta `../../datos/biblia_rv60.sqlite3` es relativa al directorio de ejecución del proyecto
-- Si ejecutas desde el directorio del capítulo con `dotnet run`, la ruta funciona correctamente
+- El archivo debe permanecer dentro de la carpeta `datos/` en la raiz del curso
+- Los ejemplos del capitulo 13 resuelven la ruta automaticamente al ejecutar `dotnet run`
 - El archivo SQLite debe estar presente antes de ejecutar cualquier ejemplo del capítulo 13

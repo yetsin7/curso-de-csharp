@@ -12,22 +12,15 @@ Este proyecto integra todo lo aprendido en el libro para crear una aplicación d
 
 La base de datos debe estar en:
 
-```
-../../datos/biblia_rv60.sqlite3
+```bash
+datos/biblia_rv60.sqlite3
 ```
 
-Ruta relativa desde el directorio del proyecto (cuando ejecutas con `dotnet run`).
+El programa busca la ruta correcta automaticamente al ejecutar `dotnet run`.
 
 ### 2. Paquete NuGet
 
-Instala el driver de SQLite para .NET:
-
-```bash
-cd 13-proyecto-biblia
-dotnet add package Microsoft.Data.Sqlite
-```
-
-Esto agrega la dependencia al archivo `13-proyecto-biblia.csproj`.
+El driver `Microsoft.Data.Sqlite` ya esta incluido en `13-proyecto-biblia.csproj`.
 
 ---
 
@@ -74,9 +67,6 @@ El programa `Program.cs` demuestra las siguientes consultas:
 ```bash
 cd 13-proyecto-biblia
 
-# Instalar dependencia (solo la primera vez)
-dotnet add package Microsoft.Data.Sqlite
-
 # Ejecutar
 dotnet run
 ```
@@ -87,7 +77,7 @@ dotnet run
 
 - Se usa `using var conexión = ...` para garantizar el cierre de la conexión
 - Los parámetros de consulta usan `@param` para prevenir SQL injection
-- La ruta de la BD es relativa: funciona si ejecutas desde el directorio del proyecto
+- La ruta de la BD se resuelve automaticamente desde el proyecto
 - Si la BD no existe, el programa muestra un mensaje de error claro
 
 ---
@@ -97,7 +87,7 @@ dotnet run
 ```csharp
 using Microsoft.Data.Sqlite;
 
-string rutaBD = "../../datos/biblia_rv60.sqlite3";
+string rutaBD = Path.GetFullPath(Path.Combine(Environment.CurrentDirectory, "..", "datos", "biblia_rv60.sqlite3"));
 
 if (!File.Exists(rutaBD))
 {
